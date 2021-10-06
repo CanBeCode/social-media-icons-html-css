@@ -1,0 +1,101 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        @import url("https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css");
+        *,
+         ::after,
+         ::before {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        
+        body {
+            background: #1d1d42;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: Helvetica, sans-serif;
+        }
+        
+        .btn {
+            text-decoration: none;
+            background: #fff;
+            padding: 23px;
+            font-size: 33px;
+            text-transform: uppercase;
+            border: 1px solid #3a43ef;
+            color: #3a43ef;
+            transition: all 0.2s ease-in-out;
+            box-shadow: 0px 0px 0px #41414154;
+            transform: scale(1);
+            position: relative;
+            border-radius: 73px;
+            margin: 0 18px;
+        }
+        
+        .btn:after,
+        .btn::before {
+            content: "";
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            position: absolute;
+            border: 1px solid #969ae2;
+            border-radius: 73px;
+        }
+        
+        .btn:hover:after {
+            top: -10px;
+            right: -10px;
+            left: -10px;
+            bottom: -10px;
+            transition: all 0.2s ease-in-out;
+        }
+        
+        .btn:hover:before {
+            top: -20px;
+            right: -20px;
+            left: -20px;
+            bottom: -20px;
+            transition: all 0.3s ease-in-out;
+        }
+        
+        .btn:hover {
+            background: #1877f2;
+            color: #fff;
+            box-shadow: 0px -8px 45px #1876f26b;
+            transform: scale(1.02);
+        }
+        
+        .btn.bg-youtube:hover {
+            background: #ff0000;
+            box-shadow: 0px -8px 45px #ff000063
+        }
+        
+        .btn.bg-instagram:hover {
+            background: #f46f30;
+            box-shadow: 0px -8px 45px #f46e307c
+        }
+    </style>
+    <a href="#" class="btn bg-facebook">
+        <i class='bx bxl-facebook-square'></i>
+    </a>
+    <a href="#" class="btn bg-youtube">
+        <i class='bx bxl-youtube'></i>
+    </a>
+    <a href="#" class="btn bg-instagram">
+        <i class='bx bxl-instagram-alt'></i>
+    </a>
+</body>
+
+</html>
